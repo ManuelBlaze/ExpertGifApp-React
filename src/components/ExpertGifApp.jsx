@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddCategory from './AddCategory';
+import GifGrid from './GifGrid';
 
 const ExpertGifApp = (  ) => {
     
@@ -18,13 +19,14 @@ const ExpertGifApp = (  ) => {
 
             <hr/>
 
-            <ol>
-                { 
-                    categories.map( category => {
-                        return <li key={category}> { category } </li>
-                    })
-                }
-            </ol>
+            { 
+                categories.map( category => 
+                    <GifGrid 
+                        key = { category }
+                        category = { category } 
+                    />
+                )
+            }
 
         </div>
     )
