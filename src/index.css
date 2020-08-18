@@ -18,3 +18,8 @@ input {
 .card-body, .crd {
   padding: 0;
 }
+
+.card-header {
+  text-transform: capitalize;
+  text-align: center;
+}
