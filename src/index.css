@@ -14,3 +14,7 @@ b {
 input {
   font-size: 1rem!important;
 }
+
+.card-body, .crd {
+  padding: 0;
+}

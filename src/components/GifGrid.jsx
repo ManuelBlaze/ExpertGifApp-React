@@ -1,36 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import GifGridItem from './GifGridItem';
+import { getGifs } from '../helpers/getGifs';
 
 const GifGrid = ({ category }) => {
 
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        getGifs();
+        getGifs( category )
+            .then( setImages );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    const apiKey = 'BuqwNxQxuIdZlcYxZN5pfgQybnanpgOx';
-
-    const getGifs = async() => {
-        
-        const url = `https://api.giphy.com/v1/gifs/search?q=Rick&limit=10&api_key=${apiKey}`;
-        const res = await fetch( url );
-        const {data} = await res.json();
-
-        const gifs = data.map( img => {
-            return {
-                id: img.id,
-                title: img.title,
-                url: img.images?.downsized_medium.url
-            }
-        })
-
-        setImages( gifs );
-    };
-
     return (
-        <>
+        <div className='mb-5'>
             <h3> { category } </h3>
             <div className="row">
                 {
@@ -42,7 +26,8 @@ const GifGrid = ({ category }) => {
                     ))
                 }
             </div>
-        </>
+            <hr/>
+        </div>
     )
 };
 
