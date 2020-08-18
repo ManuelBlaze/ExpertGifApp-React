@@ -20,7 +20,7 @@ const AddCategory = ({ setCategories }) => {
 
     return (
         <form 
-            className='form-group'
+            className='form-group p-2'
             onSubmit={ handleSubmit }
         >
             <input

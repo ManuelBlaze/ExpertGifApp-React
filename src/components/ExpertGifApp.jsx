@@ -9,9 +9,9 @@ const ExpertGifApp = (  ) => {
     return (
         <div className='container pt-5'>
             
-            <h2>
-                <b>E</b>xpert<b>G</b>if<b>A</b>pp
-            </h2>
+            <h1>
+                <b>E</b>xpert<b>G</b>if<b>A</b>pp  <a className='float-right' href="https://github.com/ManuelBlaze/ExpertGifApp-React" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+            </h1>
 
             <AddCategory 
                 setCategories = {setCategories}

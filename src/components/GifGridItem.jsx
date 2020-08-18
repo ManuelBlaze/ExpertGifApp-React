@@ -6,7 +6,7 @@ const GifGridItem = ({ title, url }) => {
 
     return (
         <div className="col-sm-12 col-md-6 col-lg-4 crd">
-            <div className="card bg-ligth">
+            <div className="card bg-ligth animate__animated animate__fadeIn animate__delay-1s">
                 <div className="card-header">{ title }</div>
                 <div className="card-body">
                     <img src={ url } alt={ title } className='card-img'/>

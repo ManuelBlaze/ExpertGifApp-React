@@ -9,9 +9,9 @@ const GifGrid = ({ category }) => {
 
     return (
         <div className='mb-5'>
-            <h3> { category } </h3>
+            <h3 className='animate__animated animate__fadeIn'> { category } </h3>
 
-            { loading && <span className="badge badge-pill badge-info text-center">Loading</span> }
+            { loading && <span className="badge badge-pill badge-info text-center animate__animated animate__flash">Loading</span> }
 
             <div className="row">
                 {
