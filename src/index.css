@@ -22,3 +22,10 @@ input {
   text-transform: capitalize;
   text-align: center;
 }
+
+.copyUrl {
+  /* display: none; */
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+}

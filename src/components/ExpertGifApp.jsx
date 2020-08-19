@@ -10,7 +10,10 @@ const ExpertGifApp = (  ) => {
         <div className='container pt-5'>
             
             <h1>
-                <b>E</b>xpert<b>G</b>if<b>A</b>pp  <a className='float-right' href="https://github.com/ManuelBlaze/ExpertGifApp-React" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                <h className='animate__animated animate__flipInX animate__delay-2s'>
+                    <b>E</b>xpert<b>G</b>if<b>A</b>pp  
+                </h>
+                <a className='float-right animate__animated animate__pulse animate__infinite' href="https://github.com/ManuelBlaze/ExpertGifApp-React" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
             </h1>
 
             <AddCategory 
