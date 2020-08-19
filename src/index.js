@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ExpertGifApp from './components/ExpertGifApp';
+import ExpertGifApp from './ExpertGifApp';
 
 ReactDOM.render(
   <ExpertGifApp />,
