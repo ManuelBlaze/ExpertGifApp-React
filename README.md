@@ -1,4 +1,4 @@
-##ExpertGifApp
+# ExpertGifApp
 
 Aplicacion consumiendo api de GIPHY
 
